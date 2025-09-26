@@ -7,7 +7,8 @@
     "dev:candidates": "pnpm --filter candidate-management dev",
     "build:vacancies": "pnpm --filter vacancies build",
     "build:candidates": "pnpm --filter candidate-management build",
-    "prepare": "husky install"
+    "prepare": "husky",
+    "test": "pnpm version"
   },
   "engineStrict": true,
   "browserslist": {

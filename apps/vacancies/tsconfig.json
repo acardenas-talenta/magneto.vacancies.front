@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": "./",
+    "jsx": "react-jsx",
+    "paths": {
+      "@app/*": ["src/*"],
+      "@vacancies/shared": ["../../packages/shared/src"],
+      "@vacancies/shared/*": ["../../packages/shared/src/*"],
+      "@vite/*": ["../../packages/vite/*"]
+    }
+  },
+  "include": ["src", "vite.config.mts", "../../eslint.config.mjs"]
+}

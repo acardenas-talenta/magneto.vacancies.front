@@ -8,9 +8,8 @@
       "@app/*": ["src/*"],
       "@vacancies/shared": ["../../packages/shared/src"],
       "@vacancies/shared/*": ["../../packages/shared/src/*"],
-      "@vite/*": ["../../packages/vite/*"],
-      "*": ["src/types/*", "src/@types/*"]
+      "@vite/*": ["../../packages/vite/*"]
     }
   },
-  "include": ["src", "src/**/*", "vite.config.mts", "../../eslint.config.mjs"]
+  "include": ["src", "vite.config.mts", "../../eslint.config.mjs"]
 }

@@ -7,6 +7,9 @@
     "dev:candidates": "pnpm --filter candidate-management dev",
     "build:vacancies": "pnpm --filter vacancies build",
     "build:candidates": "pnpm --filter candidate-management build",
+    "build:candidates:view": "pnpm --filter candidate-view build",
+    "dev:candidates:view": "pnpm --filter candidate-view dev",
+    "serve:candidates:view": "pnpm --filter candidate-view serve",
     "prepare": "husky",
     "test": "pnpm version"
   },

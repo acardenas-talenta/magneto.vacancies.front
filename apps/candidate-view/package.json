@@ -1,0 +1,32 @@
+{
+  "name": "candidate-view",
+  "version": "1.0.0",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./src/exports.ts",
+      "types": "./src/exports.ts"
+    }
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "pnpm run build:styles && tsc -b && vite build",
+    "preview": "vite preview",
+    "serve": "pnpm run build && serve dist -l 8012",
+    "test": "jest",
+    "lint": "eslint ./",
+    "prettier": "prettier --write ./**/*.js --staged",
+    "build:styles": "sass src/stylesheets/main.scss:src/entries/candidateView.entry.css"
+  },
+  "dependencies": {
+    "@vacancies/shared": "workspace:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "serve": "^14.2.5"
+  }
+}
